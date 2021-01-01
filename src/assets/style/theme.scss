@@ -1,0 +1,20 @@
+/**
+ * @Author: 孟祥涵
+ * @Date: 2020-10-29
+ * @Description: theme
+ */
+
+// Picker
+.van-picker__loading {
+    color: $color-primary;
+    z-index: 10;
+}
+
+// Button
+.van-button--disabled {
+    opacity: 1;
+    background: #f1f1f1 !important;
+    border: #f1f1f1 solid 1px !important;
+    color: #c5cad4;
+    font-size: 16px;
+}

@@ -1,0 +1,196 @@
+// Button
+.van-button {
+    &:not(.van-button--round) {
+        border-radius: $border-radius-md;
+    }
+
+    &.van-button--primary {
+        border-color: $color-primary;
+
+        &:not(.van-button--plain) {
+            background-color: $color-primary;
+        }
+
+        &.van-button--plain {
+            color: $color-primary;
+        }
+    }
+}
+
+// Cell
+.van-cell {
+    color: $text-color;
+    padding: 16px 0;
+
+    &::after {
+        left: 0;
+        right: 0;
+    }
+}
+
+// Checkbox
+.van-checkbox {
+    &__icon {
+        width: 24px;
+        height: 24px;
+
+        &--checked {
+            .van-icon {
+                background-color: $color-primary;
+                border-color: $color-primary;
+            }
+        }
+    }
+}
+
+// Dialog
+.van-dialog {
+    padding: 20px;
+    border-radius: 16px;
+
+    &__content {
+        text-align: center;
+    }
+
+    &__message {
+        font-size: 14px;
+        color: $text-color;
+        padding: 20px 0px;
+        line-height: 22px;
+        display: inline-block;
+        text-align: center;
+        font-weight: 400;
+        color: #707070;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+
+        &::after {
+            display: none;
+        }
+
+        .van-dialog__cancel,
+        .van-dialog__confirm {
+            flex: 1;
+            max-width: 115px;
+        }
+
+        .van-button {
+            //flex: 0 0 115px;
+
+            border: $color-primary solid 1px;
+            height: 40px;
+            border-radius: $border-radius-max;
+            font-size: 14px;
+            box-sizing: content-box;
+            + .van-button {
+                margin-left: 24px;
+            }
+
+            &:not(:first-child) {
+                // margin-left: 24px;
+            }
+
+            &::before,
+            &::after {
+                display: none;
+            }
+
+            &.van-dialog__cancel {
+                color: $color-primary;
+            }
+
+            &.van-dialog__confirm {
+                color: #fff;
+                background: $color-primary;
+            }
+        }
+    }
+}
+
+// Empty
+.van-empty__description {
+    margin-top: 24px;
+    color: #b2b2b2;
+    font-size: 12px;
+}
+
+// NavBar
+.van-nav-bar {
+    height: 56px;
+
+    &__title {
+        font-size: 18px;
+        color: $text-heading-color;
+    }
+
+    .van-icon {
+        font-size: 22px;
+        color: $text-heading-color;
+    }
+
+    &--rounded {
+        border-radius: 18px 18px 0px 0px;
+        overflow: hidden;
+    }
+}
+
+
+// Overlay
+.van-overlay {
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+// Popup
+.van-popup {
+    &--bottom {
+        &.van-popup--round {
+            border-radius: 18px 18px 0 0;
+        }
+    }
+}
+
+
+// Image
+.van-image {
+    width: 100%;
+    height: 100%;
+
+    &__img,
+    &__loading,
+    &__error {
+        border-radius: inherit;
+    }
+}
+
+// List
+.van-list__loading .van-loading__text,
+.van-list__finished-text,
+.van-list__error-text {
+    color: #b2b2b2;
+    font-size: 12px;
+}
+
+// Radio
+.van-radio__icon--checked .van-icon {
+    color: white;
+    border-color: white;
+    background: linear-gradient(49deg, #ff6839 0%, #ff931e 100%);
+}
+
+// Tag
+.van-tag {
+    &--primary {
+        &:not(.van-tag--plain) {
+            background: $color-primary;
+        }
+
+        &.van-tag--plain {
+            border-color: $color-primary;
+            color: $color-primary;
+        }
+    }
+}

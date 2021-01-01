@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+html,
+body,
+#app {
+    height: 100%;
+    word-break: break-word;
+}
+
+body {
+    font: normal normal normal 14px/1.5 $font-family;
+}
+
+img, video, audio, iframe {
+    vertical-align: middle;
+}
+p,span,div{
+    word-break: break-word;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+input, textarea {
+    -webkit-appearance: none;
+    -webkit-user-select: auto;
+}

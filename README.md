@@ -1,4 +1,4 @@
-# my-h5
+# h5-template-vue
 
 ## Project setup
 ```
